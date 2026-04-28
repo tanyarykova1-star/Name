@@ -1,0 +1,25 @@
+﻿<html>
+	<body>
+		<img src="cat.png">
+		<h1>Привет! Я котик-акинатор!</h1>
+		<button onclick=akinator() style="background: lightpink; width: 400; height: 100; font-size: 30;">Поиграй со мной!</button>
+		<script>
+			function akinator() {
+				alert("Привет! Я котик-акинатор! Загадай персонажа!");
+				if (confirm("Твой персонаж умный?")) {
+					if (confirm("Это Ёжик?")) {						
+						alert("Ура! Я угадал! :)");
+					} else {
+						alert("Я проиграл :(");
+					}
+				} else if (confirm("Твой персонаж активный?")) {
+					if (confirm("Это Крош?")) {
+						alert("Ура, я угадал! :)");
+					} else { 
+						alert("Я проиграл :(");
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
